@@ -2,7 +2,7 @@ resource "azurerm_virtual_network" "prod" {
   name                = "${var.prefix}-prod-spoke-vnet"
   location            = var.location
   resource_group_name = azurerm_resource_group.network.name
-  address_space       = [var.prod_spoke_vnet_cidr
+  address_space       = [var.prod_spoke_vnet_cidr]
 }
 
 resource "azurerm_subnet" "prod_app" {
