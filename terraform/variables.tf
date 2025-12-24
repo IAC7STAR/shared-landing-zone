@@ -1,7 +1,8 @@
-variable "subscription_id" {
-  description = "Azure subscription ID"
-  type        = string
+provider "azurerm" {
+  features {}
+  subscription_id = var.subscription_id
 }
+
 
 variable "tenant_id" {
   description = "Azure tenant ID"
