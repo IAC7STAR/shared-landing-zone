@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "network" {
-  name     = "${var.prefix}-lz-network-rg"
+resource "azurerm_resource_group" "lz" {
+  name     = "${var.prefix}-lz-rg"
   location = var.location
 }
